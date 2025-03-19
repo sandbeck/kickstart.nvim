@@ -192,8 +192,8 @@ vim.keymap.set('n', '<C-j>', '<C-w><C-j>', { desc = 'Move focus to the lower win
 vim.keymap.set('n', '<C-k>', '<C-w><C-k>', { desc = 'Move focus to the upper window' })
 
 -- Keybinds to control buffers
-vim.keymap.set('n', '<leader>bd', ':bp|bd <CR>', { desc = '[B]uffer [D]elete' })
--- vim.keymap.set('n', '<leader>bo', '<cmd>only<cr>', { desc = 'Delete [O]ther [B]uffers' })
+vim.keymap.set('n', '<leader>bd', ':bd|e# <CR>', { desc = '[B]uffer [D]elete' })
+vim.keymap.set('n', '<leader>bo', ':%bd|e#|bd# <CR>', { desc = 'Delete [O]ther [B]uffers' })
 vim.keymap.set('n', '[b', '<cmd>bprevious<cr>', { desc = 'Prev Buffer' })
 vim.keymap.set('n', ']b', '<cmd>bnext<cr>', { desc = 'Next Buffer' })
 
